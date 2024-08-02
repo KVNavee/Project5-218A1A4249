@@ -1,0 +1,56 @@
+<html>
+    <head><title>Sign in Page</title>
+        <link rel="stylesheet" href="MyStyles2.css">
+        <style>
+            form{
+                box-shadow: 10px 10px 10px 10px skyblue;
+                width:500px;
+                height:400px;
+                padding: 15px;
+            }
+            #s1{
+                font-size: 20px;
+            }
+            </style>
+            <script>
+            function loginVerification(){
+             var uname=document.form.uname.value;
+             var pass=document.form.password.value;
+             if(uname==null || uname==""){
+                 alert("username must be given");
+                 return false;
+             }
+             else if(pass.length<=5){
+                 alert("password must have atleast 6 characters");
+                 return false;
+             }
+             return true;
+            }
+         </script>>
+
+    </head>
+    <body>
+    <center><nav class="yum">
+        <ul>
+            <li style="font-size: 30px;">YUM-YUM FLAVOURSOME RESTAURANTS</li>
+            <li><img src="yummy.jpg" width="40" height="35"></li>
+        </ul>
+    </nav>
+     <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Registration.html">Sign in</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul></nav><br><br>
+        <center><form name="form" action="Success.html" onsubmit="return loginVerification(this)">
+            
+                <h1>Login Page</h1>
+            <img src="C:\K.V.Naveen\Project3-218A1A4249\logperson.jpg" alt="Sorry" width="120" height="120">
+            <h2>Username:<input type="text" name="uname" autofocus ></h2>
+
+            <h2>Password:<input type="password" name="password"></h2>
+            <input type="submit" id="s1"><br>
+        <a href="#" style="background-color: aliceblue;" id="s1">Forgot Password</a></form></center>
+       </body>

@@ -1,0 +1,50 @@
+<html>
+    <head><title>Sign in Page</title>
+        <link rel="stylesheet" href="MyStyles2.css">
+        <style>
+            form{
+                box-shadow: 10px 10px 10px 10px skyblue;
+                width:500px;
+                height:300px;
+                padding: 15px;
+            }
+        </style>
+    </head>
+    <body>
+    <center><nav class="yum">
+        <ul>
+            <li style="font-size: 30px;">YUM-YUM FLAVOURSOME RESTAURANTS</li>
+            <li><img src="yummy.jpg" width="40" height="35"></li>
+        </ul>
+    </nav>
+     <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Registration.html">Sign in</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+     </nav></center><br><br>
+     <center><form action="Login.html" onsubmit="return check(this)">
+        <img src="Signin.jpg" width="250" height="50"><br>
+        <table>
+        <tr>
+       <td>Username:</td>
+       <th><input type="text" name="uname" autofocus required></th></tr>
+       <tr><td>Password:</td>
+        <td><input type="password" name="pwd" required></td></tr>
+        <tr><td>Enter Date of Birth:</td><td><input type="date" name="bname" required></td></tr>
+        <tr><td>Enter your mail:</td><td><input type="email" name="ename" required></td></tr>
+        <tr><td>Gender:</td>
+        <td><input type="radio" name="gender" value="Male">Male</td>
+        <td><input type="radio" name="gender" value="Female">Female</td></tr>
+        <tr><td>Languages:</td><td><input type="checkbox" name="Eng">Engilsh</td>
+                  <td><input type="checkbox" name="Tel">Telugu</td>
+                  <td><input type="checkbox" name="Hin">Hindi</td></tr>
+        <tr><td>Enter Your Mobile no:</td><td><input type="tel" name="personal" id="per" pattern="[0-9]{10}" title="Enter 10 digits" required></td></tr> 
+        <tr><td>Enter Address:</td><td><textarea width="50" height="50">Enter Text</textarea></td></tr>
+        </table>
+        <center><input type="submit"></center>
+    </form></center></div>
+     </body>
